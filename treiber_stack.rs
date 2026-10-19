@@ -61,6 +61,7 @@ pub open spec fn current_stack_has_witnesses<V>(
 //////////////////////////////////////////////////////////////////
 ////////////// Witness and Permission Specfications //////////////
 //////////////////////////////////////////////////////////////////
+    
 pub open spec fn addresses_reflect_witnesses<V>(
     all_addresses: Set<StackCellAddress>,
     witnesses: Map<StackCellAddress, V>,
@@ -117,6 +118,7 @@ pub open spec fn permissions_are_init_except_base(
 //////////////////////////////////////////////////////////////////
 /////////// Tokenised State Machine Instance Checker /////////////
 //////////////////////////////////////////////////////////////////
+    
 pub open spec fn from_the_correct_tsm<T>(
     instance: treiber_stack::Instance,
     token: impl ValueToken<T>,
